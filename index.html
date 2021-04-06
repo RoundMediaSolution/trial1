@@ -24,53 +24,34 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
+                id="markerA">
                 <a-image
                     src="assets/smanasima.jpg"
                     scale="0 0 0"
                     class="clickable"
                     rotation="-90 0 0"
-                    gesture-handler
-                ></a-image>
+                    gesture-handler>
+                </a-image>
             </a-marker>
-            <a-assets>
-                <video
-                    id="vid"
-                    src="assets/video.mp4"
-                    preload="auto"
-                    response-type="arraybuffer"
-                    loop
-                    crossorigin
-                    webkit-playsinline
-                    autoplay
-                    muted
-                    playsinline
-                ></video>
-            </a-assets>
 
-            <a-marker
+
+           <a-marker
+                id="animated-marker"
                 type="pattern"
                 preset="custom"
                 url="assets/video.patt"
-                videohandler
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance="0.01"
-                smoothThreshold="5"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                id="markerB"
-            >
-                <a-video
-                    src="#vid"
-                    scale="1 1 1"
-                    position="0 0.1 0"
-                    rotation="-90 0 0"
+                id="markerB">
+               
+                <a-image
+                    src="assets/mobil.jpg"
+                    scale="0 0 0"
                     class="clickable"
-                    gesture-handler
-                ></a-video>
+                    rotation="-90 0 0"
+                    gesture-handler>
+                </a-image>
             </a-marker>            
             <a-entity camera></a-entity>
         </a-scene>
